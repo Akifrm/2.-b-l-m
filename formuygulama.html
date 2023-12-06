@@ -11,42 +11,44 @@
     </style>
 </head>
 <body>
-    <table>
-        <tr>
-            <td>Ad</td>
-            <td><input type="text" /></td>
-        </tr>
-        <tr>
-            <td>Soyad</td>
-            <td><input type="text" /></td>
-        </tr>
-        <tr>
-            <td>Yaş</td>
-            <td><input placeholder="Yaşınızı girin" type="number" max="125" /></td>
-        </tr>
-        <tr>
-            <td>Resim Ekle</td>
-            <td><input type="file" value="Gözat..."/></td>
-        </tr>
-        <tr>
-            <td>TC No</td>
-            <td><input type="text" /></td>
-        </tr>
-        <tr>
-            <td>Cinsiyet</td>
-            <td>K<input type="radio" checked/>E<input type="radio" /></td>
-        </tr>
-        <tr>
-            <td>Yabancı Diller</td>
-            <td>İngilizce<input type="checkbox" checked/>fransızca<input type="checkbox" />Japonca<input type="checkbox" /></td>
-        </tr>
-        <tr>
-            <td>Görüş</td>
-            <td><textarea name="" id="gorus" placeholder="GÖRÜŞÜNÜZ BİZİM İÇİN ÖNEMLİ"></textarea></td>
-        </tr>
-        <tr>
-            <td colspan="2"><input type="submit" value="Kaydet"/><button type="reset">Temizler</button></td>
-        </tr>
-    </table>
+    <form>
+        <table>
+            <tr>
+                <td>Ad</td>
+                <td><input type="text" name="name" /></td>
+            </tr>
+            <tr>
+                <td>Soyad</td>
+                <td><input type="text" name="surname" /></td>
+            </tr>
+            <tr>
+                <td>Yaş</td>
+                <td><input placeholder="Yaşınızı girin" type="number" max="125" name="age" /></td>
+            </tr>
+            <tr>
+                <td>Resim Ekle</td>
+                <td><input type="file" name="file"/></td>
+            </tr>
+            <tr>
+                <td>TC No</td>
+                <td><input type="text" name="tc"/></td>
+            </tr>
+            <tr>
+                <td>Cinsiyet</td>
+                <td>K<input type="radio" name="gender" checked/>E<input type="radio" name="gender"/></td>
+            </tr>
+            <tr>
+                <td>Yabancı Diller</td>
+                <td>İngilizce<input type="checkbox" name="language" checked/>fransızca<input type="checkbox" name="language"/>Japonca<input type="checkbox" name="language" /></td>
+            </tr>
+            <tr>
+                <td>Görüş</td>
+                <td><textarea name="text" id="gorus" placeholder="GÖRÜŞÜNÜZ BİZİM İÇİN ÖNEMLİ"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" /><button type="reset">Temizle</button></td>
+            </tr>
+        </table>
+    </form>
 </body>
 </html>
